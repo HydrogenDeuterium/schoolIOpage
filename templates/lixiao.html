@@ -19,24 +19,6 @@
   <link type="text/css" media="all" rel="stylesheet" id="infoplus_view_1526_0_cached_link"
         href="https://ehall.njtech.edu.cn/infoplus/form/css/1b17faf0245e53f306dbd0b9a6a25a08.css">
 </head>
-<html>
-<head>
-  <title>南京工业大学本科生离校签到</title>
-  <link rel="icon" type="image/png" href="https://ehall.njtech.edu.cn/infoplus/static/img/favicon.png">
-  
-  <link href="https://ehall.njtech.edu.cn/infoplus/static/css/infoplus.css?v=20210311-172558" rel="stylesheet">
-  <link href="https://ehall.njtech.edu.cn/infoplus/static/css/mobile.css?v=20210311-172558" rel="stylesheet">
-  <link href="https://ehall.njtech.edu.cn/infoplus/static/themes/default/desktop/css/theme.css?v=20210311-172558"
-        rel="stylesheet">
-  <link href="https://ehall.njtech.edu.cn/infoplus/static/themes/default/mobile/css/theme.css?v=20210311-172558"
-        rel="stylesheet">
-  <style>[autoheight] {
-      overflow: hidden;
-      box-sizing: border-box;
-  }</style>
-  <link type="text/css" media="all" rel="stylesheet" id="infoplus_view_3724_0_cached_link"
-        href="https://ehall.njtech.edu.cn/infoplus/form/css/1b17faf0245e53f306dbd0b9a6a25a08.css">
-</head>
 <body>
 <div id="help_content"></div>
 <div id="div_loader" style="display: none;">
@@ -218,7 +200,7 @@
                                            id="label_8d04b60e-122d-4d5b-a15f-399475918cb5_Container">
                                         <div style="WIDTH: 100%" title=""
                                              class="infoplus_control infoplus_labelControl inline"
-                                             id="label_8d04b60e-122d-4d5b-a15f-399475918cb5">审核中
+                                             id="label_8d04b60e-122d-4d5b-a15f-399475918cb5">审核通过
                                         </div>
                                         <input type="hidden" id="V0_CTRL10" name="fieldQDJG" value="审核中"></div>
                                     </div>
@@ -228,23 +210,27 @@
                                 <td
                                   style="BORDER-TOP: #0070c0 1pt solid; BORDER-RIGHT: #0070c0 1pt solid; VERTICAL-ALIGN: middle; BORDER-BOTTOM: #0070c0 1pt solid; PADDING-BOTTOM: 5px; PADDING-TOP: 5px; PADDING-LEFT: 5px; BORDER-LEFT: #0070c0 1pt solid; PADDING-RIGHT: 10px; BACKGROUND-COLOR: #ddeaff"
                                   rowspan="2">
-                                  <div align="left"><font face="微软雅黑" size="3"
-                                                          style="font-family:'PingFang SC',微软雅黑"><font face="微软雅黑"
-                                                                                                       size="3"
-                                                                                                       style="font-family:'PingFang SC',微软雅黑">离校具体时间</font></font>
+                                  <div align="left">
+                                    <font face="微软雅黑"
+                                          size="3"
+                                          style="font-family:'PingFang SC',微软雅黑">离校具体时间</font>
                                   </div>
                                 </td>
                                 <td
                                   style="BORDER-TOP: #0070c0 1pt solid; BORDER-RIGHT: #0070c0 1pt solid; VERTICAL-ALIGN: middle; BORDER-BOTTOM: #0070c0 1pt solid; PADDING-BOTTOM: 5px; PADDING-TOP: 5px; PADDING-LEFT: 5px; BORDER-LEFT: #0070c0 1pt solid; PADDING-RIGHT: 10px">
                                   <font face="微软雅黑" size="4" style="font-family:'PingFang SC',微软雅黑">
-                                    <div align="left">
-                                      <div class="infoplus_labelControlContainer inline"
-                                           id="label_debd29f4-b319-462f-bf52-fa8c1aa2505a_Container">
-                                        <div style="WIDTH: 100%" title=""
-                                             class="infoplus_control infoplus_labelControl inline"
-                                             id="label_debd29f4-b319-462f-bf52-fa8c1aa2505a"></div>
-                                        <input type="hidden" id="V0_CTRL16" name="fieldKSSJFrom" value=""></div>
-                                    </div>
+                                    <p id="date123456"></p>
+                                    <script>
+                                        n = new Date();
+                                        y = n.getFullYear();
+                                        M = n.getMonth() + 1;
+                                        d = n.getDate();
+                                        h = n.getHours();
+                                        m = n.getMinutes()
+                                        s = n.getSeconds()
+                                        let ts = y+'-'+M+'-'+d+' '+h+':'+m+':'+s;
+                                        document.getElementById("date123456").innerHTML = ts;
+                                    </script>
                                   </font></td>
                               </tr>
                               <tr>
@@ -266,13 +252,14 @@
                                  class="infoplus_control infoplus_imageControl"
                                  id="image_e7b420e1-5148-4873-b107-82ffe2109e4b"><a
                               data-lightbox="cdf282e2-1fec-4df5-a753-240ddbe4f8b0"
-                              href="https://ehall.njtech.edu.cn/file/36b05773-60e8-4a17-b999-ee39f394ca31"><img
-                              class="infoplus_imageControl_image"
-                              src="https://ehall.njtech.edu.cn/file/36b05773-60e8-4a17-b999-ee39f394ca31"
-                              style="width: 300px; height: 300px; cursor: pointer;"></a><input type="hidden"
-                                                                                               id="V0_CTRL12"
-                                                                                               name="fieldFH"
-                                                                                               value="https://ehall.njtech.edu.cn/file/36b05773-60e8-4a17-b999-ee39f394ca31">
+                              href="https://ehall.njtech.edu.cn/file/36b05773-60e8-4a17-b999-ee39f394ca31">
+                              <img
+                                class="infoplus_imageControl_image"
+                                src="../static/勾.jpg"
+                                style="width: 300px; height: 300px; cursor: pointer;"></a><input type="hidden"
+                                                                                                 id="V0_CTRL12"
+                                                                                                 name="fieldFH"
+                                                                                                 value="https://ehall.njtech.edu.cn/file/36b05773-60e8-4a17-b999-ee39f394ca31">
                             </div>
                           </div>
                         </td>
@@ -284,123 +271,6 @@
                 </div>
               </div>
             </div>
-            <div id="variables_container">
-              <input type="hidden"
-                     class="infoplus_control infoplus_hiddenControl infoplus_var"
-                     id="_VAR_ACTION_ORGANIZE_Name" name="_VAR_ACTION_ORGANIZE_Name"
-                     value="化工学院">
-              <input type="hidden"
-                     class="infoplus_control infoplus_hiddenControl infoplus_var"
-                     id="_VAR_ACTION_ACCOUNT" name="_VAR_ACTION_ACCOUNT"
-                     value="201821104162">
-              <input type="hidden"
-                     class="infoplus_control infoplus_hiddenControl infoplus_var"
-                     id="_VAR_ACTION_INDEP_ORGANIZES_Codes"
-                     name="_VAR_ACTION_INDEP_ORGANIZES_Codes"
-                     value="000049"><input
-              type="hidden" class="infoplus_control infoplus_hiddenControl infoplus_var" id="_VAR_OWNER_ORGANIZES_Codes"
-              name="_VAR_OWNER_ORGANIZES_Codes" value="000049">
-              <input type="hidden"
-                     class="infoplus_control infoplus_hiddenControl infoplus_var"
-                     id="_VAR_ADDR" name="_VAR_ADDR"
-                     value="10.13.3.233">
-              <input type="hidden"
-                     class="infoplus_control infoplus_hiddenControl infoplus_var"
-                     id="_VAR_URL_Attr"
-                     name="_VAR_URL_Attr"
-                     value="{}"><input
-              type="hidden" class="infoplus_control infoplus_hiddenControl infoplus_var" id="_VAR_ENTRY_NUMBER"
-              name="_VAR_ENTRY_NUMBER" value="-1">
-              <input type="hidden"
-                     class="infoplus_control infoplus_hiddenControl infoplus_var"
-                     id="_VAR_POSITIONS" name="_VAR_POSITIONS"
-                     value="000049:002:201821104162">
-              <input type="hidden"
-                     class="infoplus_control infoplus_hiddenControl infoplus_var"
-                     id="_VAR_ACTION_REALNAME"
-                     name="_VAR_ACTION_REALNAME"
-                     value="丁昊"><input
-              type="hidden" class="infoplus_control infoplus_hiddenControl infoplus_var" id="_VAR_ACTION_PHONE"
-              name="_VAR_ACTION_PHONE" value="19825029900">
-              <input type="hidden"
-                     class="infoplus_control infoplus_hiddenControl infoplus_var"
-                     id="_VAR_OWNER_ORGANIZES_Names"
-                     name="_VAR_OWNER_ORGANIZES_Names" value="化工学院"><input
-              type="hidden" class="infoplus_control infoplus_hiddenControl infoplus_var" id="_VAR_URL" name="_VAR_URL"
-              value="https://ehall.njtech.edu.cn/infoplus/form/LXQD/start">
-              <input type="hidden"
-                     class="infoplus_control infoplus_hiddenControl infoplus_var"
-                     id="_VAR_ACTION_INDEP_ORGANIZES_Names"
-                     name="_VAR_ACTION_INDEP_ORGANIZES_Names"
-                     value="化工学院">
-              <input type="hidden"
-                     class="infoplus_control infoplus_hiddenControl infoplus_var"
-                     id="_VAR_RELEASE"
-                     name="_VAR_RELEASE"
-                     value="true"><input
-              type="hidden" class="infoplus_control infoplus_hiddenControl infoplus_var" id="_VAR_OWNER_ACCOUNT"
-              name="_VAR_OWNER_ACCOUNT" value="201821104162">
-              <input type="hidden"
-                     class="infoplus_control infoplus_hiddenControl infoplus_var"
-                     id="_VAR_TODAY" name="_VAR_TODAY"
-                     value="1655654400">
-              <input type="hidden"
-                     class="infoplus_control infoplus_hiddenControl infoplus_var"
-                     id="_VAR_NOW_MONTH"
-                     name="_VAR_NOW_MONTH"
-                     value="6"><input
-              type="hidden" class="infoplus_control infoplus_hiddenControl infoplus_var" id="_VAR_ACTION_USERCODES"
-              name="_VAR_ACTION_USERCODES" value="201821104162">
-              <input type="hidden"
-                     class="infoplus_control infoplus_hiddenControl infoplus_var"
-                     id="_VAR_ACTION_ORGANIZES_Names"
-                     name="_VAR_ACTION_ORGANIZES_Names"
-                     value="化工学院">
-              <input type="hidden"
-                     class="infoplus_control infoplus_hiddenControl infoplus_var"
-                     id="_VAR_ACTION_EMAIL"
-                     name="_VAR_ACTION_EMAIL"
-                     value="DEUTERIUM@njtech.edu.cn"><input
-              type="hidden" class="infoplus_control infoplus_hiddenControl infoplus_var" id="_VAR_ACTION_ORGANIZE"
-              name="_VAR_ACTION_ORGANIZE" value="000049">
-              <input type="hidden"
-                     class="infoplus_control infoplus_hiddenControl infoplus_var"
-                     id="_VAR_OWNER_PHONE" name="_VAR_OWNER_PHONE"
-                     value="19825029900">
-              <input type="hidden"
-                     class="infoplus_control infoplus_hiddenControl infoplus_var"
-                     id="_VAR_OWNER_USERCODES"
-                     name="_VAR_OWNER_USERCODES"
-                     value="201821104162"><input
-              type="hidden" class="infoplus_control infoplus_hiddenControl infoplus_var"
-              id="_VAR_ACTION_ORGANIZES_Codes" name="_VAR_ACTION_ORGANIZES_Codes" value="000049">
-              <input type="hidden"
-                     class="infoplus_control infoplus_hiddenControl infoplus_var"
-                     id="_VAR_NOW_DAY"
-                     name="_VAR_NOW_DAY"
-                     value="20"><input
-              type="hidden" class="infoplus_control infoplus_hiddenControl infoplus_var" id="_VAR_ACTION_INDEP_ORGANIZE"
-              name="_VAR_ACTION_INDEP_ORGANIZE" value="000049">
-              <input type="hidden"
-                     class="infoplus_control infoplus_hiddenControl infoplus_var"
-                     id="_VAR_OWNER_EMAIL" name="_VAR_OWNER_EMAIL"
-                     value="DEUTERIUM@njtech.edu.cn"><input
-              type="hidden" class="infoplus_control infoplus_hiddenControl infoplus_var" id="_VAR_OWNER_REALNAME"
-              name="_VAR_OWNER_REALNAME" value="丁昊">
-              <input type="hidden"
-                     class="infoplus_control infoplus_hiddenControl infoplus_var"
-                     id="_VAR_NOW_YEAR" name="_VAR_NOW_YEAR" value="2022"><input
-              type="hidden" class="infoplus_control infoplus_hiddenControl infoplus_var"
-              id="_VAR_ACTION_INDEP_ORGANIZE_Name" name="_VAR_ACTION_INDEP_ORGANIZE_Name" value="化工学院"><input
-              type="hidden" class="infoplus_control infoplus_hiddenControl infoplus_var" id="_VAR_NOW" name="_VAR_NOW"
-              value="1655737941">
-              <input type="hidden" class="infoplus_control infoplus_hiddenControl infoplus_var"
-                     id="_VAR_ENTRY_NAME" name="_VAR_ENTRY_NAME" value="">
-              <input type="hidden"
-                     class="infoplus_control infoplus_hiddenControl infoplus_var"
-                     id="_VAR_ENTRY_TAGS"
-                     name="_VAR_ENTRY_TAGS"
-                     value=""></div>
           </div>
         </div>
       </div>
@@ -409,5 +279,4 @@
   </form>
 </div>
 </body>
-</html>
 </html>
